@@ -1,0 +1,4 @@
+import {u,I} from './products'
+export const FILTERS=['All','Living Room','Bedroom','Office','Commercial','Wall Flex']
+const G=[['a','Living Room','Modern living room feature wall'],['d','Bedroom','Calm bedroom interior'],['e','Office','Bright modern office'],['b','Wall Flex','Decorative marble style wall'],['k','Commercial','Commercial workspace interior'],['i','Living Room','Luxury living room'],['f','Bedroom','Elegant bedroom wall'],['l','Wall Flex','Statement decorative wall'],['g','Living Room','Neutral living space'],['j','Bedroom','Cozy bedroom design'],['c','Commercial','Stylish interior space'],['m','Wall Flex','Modern wall art interior'],['h','Living Room','Living room with natural light'],['n','Wall Flex','Feature wall with graphics']]
+export const gallery=G.map(([k,cat,alt],i)=>({id:i,cat,alt,src:u(I[k],800),full:u(I[k],1600)}))
